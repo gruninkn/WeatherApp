@@ -18,8 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
-        let home = WeatherViewController()
-        self.window?.rootViewController = home
+        self.window?.rootViewController = WeatherViewController()
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene
     }

@@ -10,7 +10,7 @@ import UIKit
 class WeatherViewController: UIViewController {
 
     private lazy var tableView : UITableView = {
-        let tableView = UITableView(/*frame: .zero, style: .grouped*/)
+        let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = self
         tableView.dataSource = self
@@ -40,7 +40,7 @@ class WeatherViewController: UIViewController {
 extension WeatherViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
