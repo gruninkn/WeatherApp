@@ -1,2 +1,2 @@
 # WeatherApp
-Example app
+Pet project to use API
